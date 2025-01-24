@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Policía Nacional</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  </head>
+  
+  <body>
+    <div class="top-banner">
+        <p><i>Esta es una web oficial del Gobierno de la República Dominicana</i></p>
+    </div>
+     
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Logo">
+                <div class="gov-text">
+                    <p>GOBIERNO DE LA</p>
+                    <p>REPÚBLICA DOMINICANA</p>
+                    <p>POLICÍA NACIONAL</p>
+                </div>
+            </div>
+      
+            <div class="search-container">
+              <!-- Botón para abrir el modal -->
+<button id="openModal" class="menu-icon">
+  <i class="fas fa-bars"></i> <!-- Ícono del menú -->
+</button>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Enlaces de Interés</h2>
+      <button id="closeModal" class="close-btn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <h3>Portales</h3>
+      <div class="portals">
+        <a href="https://911.gob.do/" target="_blank">
+          <img src="./images/911.png" alt="911">
+          <p>911</p>
+        </a>
+        <a href="https://www.gob.do/" target="_blank">
+          <img src="./images/logo.png" alt="Servicios GOB">
+          <p>SERVICIOS GOB</p>
+        </a>
+        <a href="https://311.gob.do/" target="_blank">
+          <img src="./images/311.png" alt="311">
+          <p>311</p>
+        </a>
+        <a href="https://observicios.gob.do/" target="_blank">
+          <img src="./images/observatorio.png" alt="Observatorio">
+          <p>OBSERVATORIO</p>
+        </a>
+        <a href="https://www.gob.do/" target="_blank">
+          <img src="./images/logo.png" alt="Gobierno">
+          <p>GOB</p>
+        </a>
+        <a href="https://www.arssenasa.gob.do/" target="_blank">
+          <img src="./images/senasa.png" alt="Senasa">
+          <p>SENASA</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              
+              <!-- Contenedor del buscador -->
+              <div class="search-bar" id="searchBar">
+                <input type="text" placeholder="Buscar">
+                <button>
+                  <i class="fas fa-search"></i> <!-- Ícono de búsqueda -->
+                </button>
+              </div>
+            
+              <!-- Ícono de Login con tooltip -->
+              <a href="login.html" target="_blank" class="login-icon">
+                <i class="fas fa-user"></i> <!-- Ícono de usuario -->
+              </a>
+            </div>
+            
+        </div>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li class="has-submenu">
+              <a href="#">Sobre Nosotros</a>
+              <ul class="submenu">
+                <li><a href="quienessomos.html" class="menu-link">Quiénes Somos</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="marcolegal.html">Marco Legal</a></li>
+                <li><a href="conocealdirectorgeneral.html">Conoce al Director General</a></li>
+                <li><a href="organigrama.html">Organigrama</a></li>
+                <li><a href="simbolos.html">Símbolos</a></li>
+                <li><a href="dependencias.html">Dependencias</a></li>
+              
+              </ul>
+            </li>
+           
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="https://www.policianacional.gob.do/transparencia/">Transparencia</a></li>
+            <li><a href="https://www.policianacional.gob.do/transparencia/?page_id=122">Publicaciones</a></li>
+            <li><a href="#">Prófugos</a></li>
+            <li><a href="reclutamiento.html">Reclutamiento 2025</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="https://www.policianacional.gob.do/foro/">Foro</a></li>
+          </ul>
+        </nav>
+        
+    </header>
+      
+    <!-- Hero Section -->
+    <section class="carousel">
+      <div class="carousel-container">
+        <img src="./images/banner 1.svg" alt="Banner 1" class="carousel-image" />
+        <img src="./images/banner 2.svg" alt="Banner 2" class="carousel-image" />
+        <img src="./images/banner 3.svg" alt="Banner 3" class="carousel-image" />
+      </div>
+      <button class="carousel-button prev" aria-label="Previous">&lt;</button>
+      <button class="carousel-button next" aria-label="Next">&gt;</button>
+    </section>
+    
+      
+    <!-- New Security Banner Section -->
+    <section class="security-banner">
+      <div class="security-content">
+        <img src="./images/imagen cotejo escudo.png" alt="Escudo" class="security-image" />
+        <h2>
+          tú seguridad es nuestro <span>trabajo</span>.
+        </h2>
+      </div>
+    </section>
+    
+
+    <!-- Main Content -->
+<!-- Main Content -->
+<main>
+    <!-- About, Services, Transparency -->
+    <section class="features">
+      <div class="feature">
+          <div class="feature-overlay">
+              <i class="fas fa-users feature-icon"></i> <!-- Icono añadido -->
+              <h3>Sobre Nosotros</h3>
+              <a href="quienessomos.html" class="btn-white">Leer más</a>
+          </div>
+          <img src="./images/imagen 2 policia.jpeg" alt="Sobre Nosotros" />
+      </div>
+      <div class="feature">
+          <div class="feature-overlay">
+              <i class="fas fa-clock feature-icon"></i> <!-- Icono añadido -->
+              <h3>Servicios</h3>
+              <a href="#" class="btn-white">Leer más</a>
+          </div>
+          <img src="./images/imagen 2 policia.png" alt="Servicios" />
+      </div>
+      <div class="feature">
+          <div class="feature-overlay">
+              <i class="fas fa-balance-scale feature-icon"></i> <!-- Icono añadido -->
+              <h3>Transparencia</h3>
+              <a href="https://www.policianacional.gob.do/transparencia/" class="btn-white">Leer más</a>
+          </div>
+          <img src="./images/imagen 3 policia.jpg" alt="Transparencia" />
+      </div>
+  </section>
+  
+      <!-- News -->
+      <section class="news">
+        <h2>Noticias</h2>
+        <div class="news-grid">
+          <article>
+            <img src="news1.png" alt="News 1" />
+            <h3>Cae abatido "Mantequilla"</h3>
+            <p>Hace 5 horas</p>
+          </article>
+          <article>
+            <img src="news2.png" alt="News 2" />
+            <h3>Policía Nacional capacita...</h3>
+            <p>Hace 1 día</p>
+          </article>
+          <!-- Add more articles as needed -->
+        </div>
+      </section>
+      
+
+      <!-- Wanted Section -->
+      <section class="wanted">
+        <h2>Prófugos</h2>
+        <div class="wanted-grid">
+          <div class="wanted-person">
+            <img src="wanted1.png" alt="Wanted 1" />
+            <p>Nombre: Juan Pérez</p>
+          </div>
+          <div class="wanted-person">
+            <img src="wanted2.png" alt="Wanted 2" />
+            <p>Nombre: Mario López</p>
+          </div>
+          <!-- Add more profiles as needed -->
+        </div>
+        <a href="#">Ver más</a>
+      </section>
+      <!-- Reporte en Línea Section -->
+      <section class="report-banner">
+        <img src="./images/sd.svg" alt="Reporte en Línea" class="report-image">
+        <a href="contacto.html"button class="report-button">Ingresar</button> </a>
+    </section>
+    
+      <!-- seccion de intereses -->
+      <section class="interest-section">
+        <h2>De Interés</h2>
+        <p>Algunas publicaciones de interés ciudadano.</p>
+        <div class="interest-container">
+            <!-- Imagen con botón -->
+            <div class="interest-item">
+                <img src="./images/interes1.svg" alt="Buzón de Quejas">
+                <button class="interest-button">Acceder</button>
+            </div>
+            <div class="interest-item">
+                <img src="./images/interes2.svg" alt="Foro">
+                <button class="interest-button">Ir al Foro</button>
+                <a href="https://www.policianacional.gob.do/foro/"button class="interest-button">Ir al Foro</button> </a>
+            </div>
+            <!-- Imagen sin botón (redireccionable) -->
+            <a href="https://www.arssenasa.gob.do/" target="_blank" class="interest-link">
+                <img src="./images/senasa.svg" alt="Senasa">
+            </a>
+            <a href="https://www.gob.do/" target="_blank" class="interest-link">
+                <img src="./images/portalgob.svg" alt="Portal Gob">
+            </a>
+        </div>
+    </section>
+    
+    
+      <!-- Redes Sociales -->
+<section class="social-media">
+    <h2>Redes Sociales</h2>
+    <div class="social-links">
+      <a href="https://www.facebook.com/policiard/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/PoliciaRD?mx=2" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/policiard/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/user/PoliciaRD" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </section>
+  <section class="contact-info">
+    <div class="contact-container">
+      <section class="contact-info">
+        <div class="contact-container">
+          <!-- Logo y nombre -->
+          <div class="contact-logo">
+            <img src="./images/logo.png" alt="logo">
+            <div class="gov-footer-text">
+              <p>GOBIERNO DE LA</p>
+              <p>REPÚBLICA DOMINICANA</p>
+              <p>POLICÍA NACIONAL</p>
+            </div>
+          </div>
+      
+          <!-- Secciones de texto -->
+          <div class="contact-column">
+            <h3>CONÓCENOS</h3>
+            <p>Palacio de la Policía Nacional de República Dominicana</p>
+            <p>(Sede Central)</p>
+          </div>
+      
+          <div class="contact-column">
+            <h3>CONTÁCTANOS</h3>
+            <p>(809) 682-2151</p>
+            <p>(809) 685-2020</p>
+            <p><a href="mailto:info@policia.gob.do">info@policia.gob.do</a></p>
+          </div>
+      
+          <div class="contact-column">
+            <h3>BÚSCANOS</h3>
+            <p>Ave. Leopoldo Navarro No. 402, Sector Gazcue,</p>
+            <p>Santo Domingo de Guzmán, Distrito Nacional,</p>
+            <p>República Dominicana</p>
+          </div>
+      
+          <div class="contact-column">
+            <h3>INFÓRMATE</h3>
+            <p><a href="#" class="hover-link">Términos de Uso</a></p>
+            <p><a href="#" class="hover-link">Políticas de Privacidad</a></p>
+            <p><a href="#" class="hover-link">Preguntas Frecuentes</a></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2025 Todos los Derechos Reservados. Desarrollado por la Policía
+        Nacional.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

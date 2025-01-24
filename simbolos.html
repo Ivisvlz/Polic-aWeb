@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Policía Nacional</title>
+    <link rel="stylesheet" href="simbolos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  </head>
+  
+  <body>
+    <div class="top-banner">
+        <p><i>Esta es una web oficial del Gobierno de la República Dominicana</i></p>
+    </div>
+     
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Logo">
+                <div class="gov-text">
+                    <p>GOBIERNO DE LA</p>
+                    <p>REPÚBLICA DOMINICANA</p>
+                    <p>POLICÍA NACIONAL</p>
+                </div>
+            </div>
+      
+            <div class="search-container">
+              <!-- Botón para abrir el modal -->
+<button id="openModal" class="menu-icon">
+  <i class="fas fa-bars"></i> <!-- Ícono del menú -->
+</button>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Enlaces de Interés</h2>
+      <button id="closeModal" class="close-btn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <h3>Portales</h3>
+      <div class="portals">
+        <a href="https://911.gob.do/" target="_blank">
+          <img src="./images/911.png" alt="911">
+          <p>911</p>
+        </a>
+        <a href="https://www.gob.do/" target="_blank">
+          <img src="./images/logo.png" alt="Servicios GOB">
+          <p>SERVICIOS GOB</p>
+        </a>
+        <a href="https://311.gob.do/" target="_blank">
+          <img src="./images/311.png" alt="311">
+          <p>311</p>
+        </a>
+        <a href="https://observicios.gob.do/" target="_blank">
+          <img src="./images/observatorio.png" alt="Observatorio">
+          <p>OBSERVATORIO</p>
+        </a>
+        <a href="https://www.gob.do/" target="_blank">
+          <img src="./images/logo.png" alt="Gobierno">
+          <p>GOB</p>
+        </a>
+        <a href="https://www.arssenasa.gob.do/" target="_blank">
+          <img src="./images/senasa.png" alt="Senasa">
+          <p>SENASA</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              
+              <!-- Contenedor del buscador -->
+              <div class="search-bar" id="searchBar">
+                <input type="text" placeholder="Buscar">
+                <button>
+                  <i class="fas fa-search"></i> <!-- Ícono de búsqueda -->
+                </button>
+              </div>
+            
+              <!-- Ícono de Login con tooltip -->
+              <a href="login.html" target="_blank" class="login-icon">
+                <i class="fas fa-user"></i> <!-- Ícono de usuario -->
+              </a>
+            </div>
+            
+        </div>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li class="has-submenu">
+              <a href="#">Sobre Nosotros</a>
+              <ul class="submenu">
+                <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="marcolegal.html">Marco Legal</a></li>
+                <li><a href="conocealdirectorgeneral.html">Conoce al Director General</a></li>
+                <li><a href="organigrama.html">Organigrama</a></li>
+                <li><a href="simbolos.html">Símbolos</a></li>
+                <li><a href="dependencias.html">Dependencias</a></li>
+                
+              </ul>
+            </li>
+         
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="https://www.policianacional.gob.do/transparencia/">Transparencia</a></li>
+            <li><a href="https://www.policianacional.gob.do/transparencia/?page_id=122">Publicaciones</a></li>
+            <li><a href="#">Prófugos</a></li>
+            <li><a href="reclutamiento.html">Reclutamiento 2025</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="https://www.policianacional.gob.do/foro/">Foro</a></li>
+          </ul>
+        </nav>
+        
+    </header>
+      <!-- Banner Principal -->
+  <div class="banner">
+    <img src="./images/banner13.svg" alt="Banner Principal" class="banner-img">
+      <div class="banner-overlay">
+        <p class="breadcrumb">
+          Estas aquí: <a href="#">Inicio</a> > <a href="#">Sobre Nosotros</a> > <span>Símbolos</span>
+        </p>
+      </div>
+      
+
+      <main class="main-container">
+        <section class="symbols-section">
+          <div class="tabs">
+            <button class="tab-button active" onclick="showTab('policiales')">Símbolos Policiales</button>
+            <button class="tab-button" onclick="showTab('insignias')">Insignias del Uniforme</button>
+          </div>
+          
+          <!-- Contenido: Símbolos Policiales -->
+          <div id="policiales" class="tab-content active">
+            <h1>Bandera de la Policía Nacional</h1>
+            <img src="./images/banderapolicia.svg" alt="Bandera de la Policía Nacional" class="symbol-image">
+            <p>
+                Es el emblema oficial de la Institución policial que representa un homenaje a los hombres y mujeres que la han forjado y que de forma valerosa realizan la sagrada misión de salvaguardar a los ciudadanos de la nación, exaltando los sentimientos e impulsándolos al sacrificio; lo que la hace merecedora de respeto y de recibir los honores correspondientes.
+            </p>
+               <h1> Descripción:</h1>
+                <p>
+                Está constituida por la bandera de la República Dominicana, dividida en cuatro (4) pabellones separados por una cruz de color blanco, sin el escudo de arma de la República en el centro, con tres (3) franjas horizontales; la primera de color azul, colocada en el extremo derecho de los cuatro pabellones, el segundo de color blanco y el tercero de color verde, ambos de igual proporción y unidas horizontalmente en la parte inferior de los pabellones. De un metro con treinta y cinco (1.35) centímetros de largo, por un metro con diez (1.10) centímetros de ancho.
+                </p>
+            <h2>Escudo Emblemático Institucional</h2>
+            <img src="./images/emblema.png" alt="Escudo Emblemático Institucional" class="symbol-image">
+            <p>
+                Representa la identidad corporativa de la Institución, simbolizado por la Cruz de Malta, en la que se destaca el conjunto de rasgos y condiciones objetivas de la esencia social Institucional, dándole a la misma un registro visual que ofrece un valor diferenciador ante las demás instituciones del Estado y cuerpos policiales del mundo.
+
+                La Cruz de Malta, simboliza la Orden de los Caballeros de Malta, y en su descripción se destaca, dos brazos verticales en color verde (aguamarina) y dos horizontales en blanco, envuelta en un ramo de laurel y otro de palma en color verde del lado izquierdo y derecho del observador respectivamente, según lo dispuesto en el Escudo Nacional, con dos círculos concéntricos color verde (aguamarina), con un radio de aproximadamente una pulgada, con la inscripción “POLICÍA NACIONAL” en su parte superior interna y en la parte inferior “REPÚBLICA DOMINICANA”, en el centro de ambos círculos, sobre un fondo blanco, dos revólveres tipo mosquetón (emblema que representa las Armas de la Policía Nacional), y debajo de los revólveres el lema de la institución “LEY Y ORDEN”, en letras negras.
+            </p>
+            <h2>Logo Institucional de la Policía Nacional</h2>
+            <img src="./images/policia.png" alt="Logo Institucional" class="symbol-image">
+            <p>
+                Constituye el símbolo distintivo de la Institución a nivel nacional e internacional; en su descripción se destaca su forma de triángulo isósceles ovalado, de 4 1/2 pulgadas de largo y 3 1/4 pulgadas de ancho; en su interior otro triángulo más pequeño color azul celeste, de 2 1/4 pulgadas de largo y 2 pulgadas de ancho, conteniendo en su centro el escudo emblemático Institucional; el espacio comprendido entre los dos triángulos tiene el color azul marino, y en la parte superior lleva bordado el nombre de “POLICÍA NACIONAL” en letras color blanco; bordeado en la parte inferior desde su lado derecho hacia el izquierdo con la inscripción de “REPÚBLICA DOMINICANA”; el borde exterior del triángulo superior está bordado por un hilo color amarillo oscuro.
+            </p>
+            <h2>Himno de la Policía Nacional</h2>
+            <p>
+                Es la composición poética que rememora el sentido de responsabilidad, la esencia del quehacer policial y valores inherentes que cada policía debe asumir frente al ejercicio de su carrera, al igual que otras grandes virtudes denotadas en la letra de esta composición. Su música es autoría del Profesor Capitán Ángel Peña y Peña, P.N., y las letras del Capitán Dr. Rafael M. Pérez Acosta, P.N.
+            </p>
+            <h2>Notas del Himno de la Policía Nacional</h2>
+            <h2>I</h2>
+            <p>LA POLICÍA NACIONAL ES FUERZA, LUZ DE PAZ Y DE CONCORDIA, QUE SOBRE CUMBRE DE MORAL SE EMPINA AL CIELO EN UNA AFÁN DE GLORIA.</p>
+            <h2>II</h2>
+            <p>CON NOBLE ORGULLO Y CORAZÓN Y LA EXPRESIÓN DE FIRME RECTITUD, ALZA SU VOZ DE ORDEN, LEY Y RAZÓN Y AL VICIO EXTIRPA EN BIEN DE LA VIRTU</p>
+            <h2>III</h2>
+            <p>DONDE SURGEN MOTIVOS DE ALARMA Y HAY PELIGRO, MALDAD Y ASECHANZA, RAUDO CORRE IMPONIENDO LA CALMA EL AGENTE QUE INSPIRA CONFIANZA,</p>
+            <h2>IV</h2>
+            <p>Y AUNQUE NAZCAN BORRASCAS DE INSIDIAS MANCILLANDO SU HONRA Y HONOR, SEGUIRÁ SU DESVELO Y VIGILIA POR SU PUEBLO, SU PATRIA Y PENDÓN.</p>
+            <a href="https://www.ivoox.com/himno-policia-nacional-dominicana-audios-mp3_rf_10703222_1.html" target="_blank" class="listen-link">Escuchar aquí</a>
+            <h2>Lema de la Policía Nacional</h2>
+            <p>“LEY Y ORDEN”</p>
+            <h2>Eslogan de la Policía Nacional</h2>
+            <p>“TODO POR LA PATRIA”</p>
+          </div>
+      
+          <!-- Contenido: Insignias del Uniforme -->
+          <div id="insignias" class="tab-content">
+            <h1>Teniente General</h1>
+            <img src="./images/insigniaTeniente.svg" alt="Teniente General" class="symbol-image">
+            <p>
+                Simbolizada por el Escudo Nacional en metal, con 3 estrellas color plateado de cinco puntas; dos colocadas lateralmente, de forma que toquen el centro del ramo de laurel y de palma del escudo, y la otra colocada debajo, de forma que la punta superior toque el centro del lazo donde se unen los ramos de laurel y palma.
+            </p>
+            <h2>Mayor General</h2>
+            <img src="./images/insigniaMayor.png" alt="Mayor General" class="symbol-image">
+            <p>
+                Representada por el Escudo Nacional en metal, con dos estrellas color plateado, colocadas en ambos lados del escudo, de forma que toquen el centro del ramo de laurel y palma.
+            </p>
+            <h2>General de Brigada</h2>
+            <img src="./images/MayorBrigada.png" alt="General de Brigada" class="symbol-image">
+            <p>
+                Consiste en el Escudo Nacional en metal, con una estrella color plateado de cinco puntas, colocada debajo del Escudo, de forma que la punta superior toque el centro del lazo donde se unen los ramos de palma y de laurel.
+            </p>
+            <h2>Coronel</h2>
+            <img src="./images/coronel.png" alt="Coronel" class="symbol-image">
+            <p>
+                Simbolizada por el Escudo Nacional en metal, llevará tres hojas de laurel color plateado, colocadas dos de ellas lateralmente de forma que toquen el centro del ramo de laurel y de palma, y la tercera hoja de laurel, colocada debajo del escudo, de forma que la punta de esta toque el centro del lazo donde se unen los ramos de laurel y palma.
+            </p>
+            <h2>Teniente Coronel</h2>
+            <img src="./images/tenientecoronel.png" alt="Teniente Coronel" class="symbol-image">
+            <p>
+                Representada por el Escudo Nacional en metal, con dos hojas de laurel color plateado, colocadas lateralmente de forma que toquen el centro del ramo de laurel y palma.
+            </p> <h2>Mayor</h2>
+            <img src="./images/mayor.svg" alt="Mayor" class="symbol-image">
+            <p>
+                Representada por el Escudo Nacional en metal, con una hoja de laurel color plateado, de forma que la punta de esta toque el centro del lazo donde se unen los ramos de laurel y palma.
+            </p> <h2>Capitán</h2>
+            <img src="./images/capitan.svg" alt="Capitán" class="symbol-image">
+            <p>
+                Representada por tres hojas de laurel en metal, color plateado, colocadas una al lado de la otra, separadas y unidas por 2 barritas del mismo color, equidistantes una de otra.
+            </p> <h2>1er. Teniente</h2>
+            <img src="./images/primerteniente.png" alt="Primer Teniente" class="symbol-image">
+            <p>
+                Constituida por dos hojas de laurel en metal, color plateado, colocadas una al lado de la otra, separadas y unidas por 2 barritas del mismo color, equidistantes una de otra.
+
+            </p> <h2>2do. Teniente</h2>
+            <img src="./images/segundoteniente.svg" alt="segundo teniente" class="symbol-image">
+            <p>
+                Representada por una hoja de laurel de metal, color plateado.
+            </p> <h2>Sargento Mayor</h2>
+            <img src="./images/sargentomayor1.png" alt="sargentomayor" class="symbol-image">
+            <p>
+                Simbolizada por seis galones de grados, tres en la parte superior, uno encima del otro terminando en punta, y tres en la parte inferior, uno al lado del otro, terminando en forma de arco.
+            </p> <h2>Sargento</h2>
+            <img src="./images/sargento.jpg" alt="Sargento" class="symbol-image">
+            <p>
+                Representada por tres galones de grados, terminando en punta en la parte superior, colocados uno encima del otro.
+            </p> <h2>Cabo</h2>
+            <img src="./images/cabo.png" alt="Cabo" class="symbol-image">
+            <p>
+                Consiste en dos galones de grados terminando en punta en la parte superior, colocados uno encima del otro.
+            </p>
+        </p> <h2>Raso</h2>
+        <p>
+            Este rango no tiene insignia que le represente.
+        </p>
+          </div>
+        </section>
+      
+                
+              
+                <!-- Barra Lateral Derecha -->
+                <aside class="content-right">
+                  <div class="widget lema">
+                    <div class="decorative-lines">
+                      <span class="line blue"></span>
+                      <span class="line red"></span>
+                    </div>
+                    <div class="content">
+                      <i class="fas fa-quote-left quote-icon"></i>
+                      <h3>Nuestro Lema</h3>
+                      <p>"Ley y Orden, salvaguardando la seguridad ciudadana en todo el territorio nacional"</p>
+                    </div>
+                    <div class="decorative-lines">
+                      <span class="line blue"></span>
+                      <span class="line red"></span>
+                    </div>
+                  </div>
+              
+                  <div class="widget noticias">
+                    <h3>Últimas Noticias</h3>
+                    <ul>
+                      <li>
+                        <a href="#">Avances tecnológicos en seguridad: Innovación tecnológica revoluciona...</a>
+                        <p>Hoy a las 14:45</p>
+                      </li>
+                      <li>
+                        <a href="#">Policías disfrutan en grande de histórica fiesta-concierto.</a>
+                        <p>Hoy a las 09:05</p>
+                      </li>
+                      <li>
+                        <a href="#">República Dominicana registra 126 homicidios y 19,994 robos menos...</a>
+                        <p>Ayer a las 18:48</p>
+                      </li>
+                      <li>
+                        <a href="#">Diez personas, incluyendo una mujer, detenidas por la DICRIM...</a>
+                        <p>10 Ene a las 15:13</p>
+                      </li>
+                    </ul>
+                  </div>
+              
+                  <div class="widget buzones">
+                    <img src="./images/interes1.svg" alt="Buzón de Quejas" class="buzon-img">
+                    <button class="buzon-button">Acceder</button>
+                  </div>
+                </aside>
+              </div>
+              
+          
+        </aside>
+      </main>
+      
+
+    <section class="social-media">
+      <h2>Redes Sociales</h2>
+      <div class="social-links">
+        <a href="https://www.facebook.com/policiard/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/PoliciaRD?mx=2" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/policiard/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/user/PoliciaRD" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </section>
+    <section class="contact-info">
+      <div class="contact-container">
+        <section class="contact-info">
+          <div class="contact-container">
+    <!-- Footer -->
+    <div class="contact-logo">
+      <img src="./images/logo.png" alt="logo">
+      <div class="gov-footer-text">
+        <p>GOBIERNO DE LA</p>
+        <p>REPÚBLICA DOMINICANA</p>
+        <p>POLICÍA NACIONAL</p>
+      </div>
+    </div>
+  
+    <!-- Secciones de texto -->
+    <div class="contact-column">
+      <h3>CONÓCENOS</h3>
+      <p>Palacio de la Policía Nacional de República Dominicana</p>
+      <p>(Sede Central)</p>
+    </div>
+  
+    <div class="contact-column">
+      <h3>CONTÁCTANOS</h3>
+      <p>(809) 682-2151</p>
+      <p>(809) 685-2020</p>
+      <p><a href="mailto:info@policia.gob.do">info@policia.gob.do</a></p>
+    </div>
+  
+    <div class="contact-column">
+      <h3>BÚSCANOS</h3>
+      <p>Ave. Leopoldo Navarro No. 402, Sector Gazcue,</p>
+      <p>Santo Domingo de Guzmán, Distrito Nacional,</p>
+      <p>República Dominicana</p>
+    </div>
+  
+    <div class="contact-column">
+      <h3>INFÓRMATE</h3>
+      <p><a href="#" class="hover-link">Términos de Uso</a></p>
+      <p><a href="#" class="hover-link">Políticas de Privacidad</a></p>
+      <p><a href="#" class="hover-link">Preguntas Frecuentes</a></p>
+    </div>
+  </div>
+  </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+  <p>
+  &copy; 2025 Todos los Derechos Reservados. Desarrollado por la Policía
+  Nacional.
+  </p>
+  </footer>
+  <script src="script.js"></script>
+  </body>
+  </html>

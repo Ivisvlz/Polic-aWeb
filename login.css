@@ -1,0 +1,184 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: url('./images/fondo4.svg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Capa Blanca Transparente */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6); /* Transparencia ajustada */
+    z-index: 0;
+  }
+  
+  /* Login Container */
+  .login-container {
+    text-align: center;
+    max-width: 1500px;
+    margin: 30px auto; /* Reducir margen superior e inferior */
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px 30px; /* Reducir el padding general */
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
+}
+
+
+  
+  /* Logo and Title */
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaciado entre logo y texto */
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 80px; /* Reducir el tamaño del logo */
+}
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear el texto a la izquierda */
+  }
+  
+  .title p {
+    margin: 0;
+    line-height: 1.2;
+    color: #002f5e;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px; /* Cambia de 16px a 14px o ajusta según prefieras */
+}
+
+.title p:nth-child(3) {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #e63946;
+    font-size: 16px; /* Ajusta ligeramente el tamaño de este texto */
+    margin-top: 5px;
+    position: relative;
+}
+
+  
+  .title p:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e63946;
+    position: absolute;
+    top: -4px;
+    left: 0;
+  }
+  
+  .subtitle {
+    margin: 20px 0; /* Más espacio hacia abajo */
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Login Box */
+  .login-box {
+    text-align: left;
+    background-color: white;
+    padding: 30px; /* Reducir el padding interno */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Ajustar el ancho si es necesario */
+    margin: 0 auto; /* Mantener centrado */
+}
+
+
+  
+  .login-icon {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #002f5e;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .form-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #002f5e; /* Cambiar el color a azul */
+}
+
+  
+.form-group input {
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* Mantén suficiente espacio a la izquierda */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #e63946;
+    box-shadow: 0 0 5px rgba(230, 57, 70, 0.2);
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    gap: 10px; /* Espaciado entre Recordarme y el enlace */
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+}
+
+.form-options label {
+    display: flex;
+    align-items: center; /* Centra verticalmente el checkbox y el texto */
+}
+
+.form-options a {
+    margin-left: auto; /* Mueve el enlace "Olvidé mi contraseña" hacia el lado derecho */
+    color: #e63946;
+    text-decoration: underline;
+}
+
+  .form-options a:hover {
+    color: darkred;
+  }
+  
+  .login-btn {
+    width: 100%;
+    background-color: #002f5e;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #004080;
+  }
+  

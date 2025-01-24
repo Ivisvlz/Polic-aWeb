@@ -1,0 +1,635 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  
+  
+  /* Banda Superior */
+  .top-banner {
+    width: 100%;
+    background-color: #002f5e;
+    color: white;
+    text-align: left;
+    padding: 5px 20px;
+    font-size: 12px;
+  }
+  
+  .top-banner p {
+    margin: 0;
+    font-style: italic;
+    color: white;
+  }
+  
+  /* Header Styling */
+  header {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Barra Superior con Logo y Buscador */
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo img {
+    height: 60px; /* Tamaño ligeramente mayor */
+  }
+  
+  /* Texto del Gobierno */
+  .gov-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gov-text p {
+    margin: 0;
+    line-height: 1.2;
+    color: #002f5e;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+  }
+  
+  .gov-text p:nth-child(3) {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #e63946;
+    font-size: 20px;
+    margin-top: 5px;
+    position: relative;
+  }
+  
+  .gov-text p:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e63946;
+    position: absolute;
+    top: -4px;
+    left: 0;
+  }
+  
+  /* Contenedor principal del buscador */
+  .search-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    position: relative;
+    gap: 10px;
+  }
+  
+  /* Botón del Menú */
+  .menu-icon {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Contenedor general del buscador */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none; /* Quitar los bordes */
+    border-radius: 25px;
+    padding: 0; /* Sin espaciado interno inicial */
+    width: 50px; /* Ancho inicial reducido al tamaño del botón */
+    height: 45px; /* Altura fija */
+    transition: width 0.3s ease, border-color 0.3s ease; /* Transiciones suaves */
+    overflow: hidden; /* Oculta contenido fuera del borde */
+    position: relative; /* Necesario para posicionar el botón */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añadir una sombra ligera */
+  }
+  
+  /* Cuando está activo (desplegado) */
+  .search-bar.active {
+    width: 296px; /* Ancho al desplegar */
+    padding: 2px 12px; /* Añade espaciado interno cuando está desplegado */
+    border-color: #e63946; /* Cambia el borde a rojo */
+  }
+  
+  /* Input del buscador */
+  .search-bar input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    flex: 1;
+    opacity: 0; /* Oculto inicialmente */
+    visibility: hidden; /* Evita clics mientras está oculto */
+    transition: opacity 0.3s ease; /* Transición suave */
+  }
+  
+  /* Input visible cuando está activo */
+  .search-bar.active input {
+    opacity: 1; /* Mostrar input */
+    visibility: visible;
+  }
+  
+  /* Botón del buscador */
+  .search-bar button {
+    background-color: #e63946;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* Hace que el botón sea completamente circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 2px; /* Ajusta para alinearse perfectamente al borde */
+    z-index: 2; /* Asegura que esté sobre el borde del contenedor */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ligera sombra */
+  }
+  
+  .search-bar button i {
+    color: white;
+    font-size: 18px;
+  }
+  .search-bar button:hover {
+    background-color: #d62828; /* Rojo más oscuro al pasar el cursor */
+   } 
+  
+  /* Ícono del Menú */
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e63946;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    order: 2; /* Ícono después del buscador */
+  }
+  
+  .menu-icon:hover {
+    background-color: #d62828;
+  }
+  
+  .menu-icon i {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Menú Principal */
+  /* Main Menu Styling */
+  .main-menu {
+    background-color: white;
+    padding: 10px 0;
+    border-top: 1px solid #ddd; /* Línea gris clara */
+    border-bottom: 1px solid #ddd;
+    position: sticky; /* Hace que el menú sea fijo */
+    top: 0; /* Se pega a la parte superior */
+    z-index: 10; /* Asegura que esté encima de otros elementos */
+  }
+  body, html {
+    overflow: visible; /* Asegúrate de que no se limite el scroll */
+  }
+  
+  
+  .main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Use space-around or space-between for better spacing */
+    align-items: center;
+  }
+  
+  .main-menu ul li {
+    position: relative; /* Necessary for positioning submenus */
+    display: inline-block; /* Inline-block for horizontal layout */
+  }
+  
+  /* Add caret symbol for parent menu items */
+  .main-menu ul li.has-submenu > a::after {
+    content: " \25BE"; /* Downward caret symbol */
+    font-size: 15px;
+    margin-left: 8px;
+    color: #002f5e; /* Same color as the text */
+    transition: transform 0.3s ease;
+  }
+  
+  .main-menu ul li.has-submenu:hover > a::after {
+    transform: rotate(-180deg); /* Flip the caret upwards */
+  }
+  
+  /* Menu Links */
+  .main-menu ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #002f5e;
+    font-weight: 500;
+    padding: 6px 4px; /* Reduce padding for narrower menu items */
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  .main-menu ul li a.active {
+    color: #e63946; /* Red color for active state */
+    font-weight: bold;
+  }
+  
+  .main-menu ul li a:hover {
+    color: #e63946; /* Red hover color */
+  }
+  
+  /* Submenus */
+  .main-menu ul li ul.submenu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%; /* Position submenu below parent item */
+    left: 0; /* Align submenu with parent */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    list-style: none;
+    padding: 5px; /* Add padding for rounded corners */
+    border: 1px solid #ddd; /* Border for submenu */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    z-index: 999;
+    min-width: 150px; /* Minimum width for submenu */
+  }
+  
+  /* Submenu Items */
+  .main-menu ul li ul.submenu li {
+    display: block; /* Block display for vertical stacking */
+  }
+  
+  .main-menu ul li ul.submenu li a {
+    padding: 8px 12px; /* Internal spacing */
+    font-size: 14px; /* Same font size */
+    color: #002f5e; /* Match main menu link color */
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for submenu links */
+  .main-menu ul li ul.submenu li a:hover {
+    color: #e63946; /* Turn text red on hover */
+    background-color: transparent; /* No background on hover */
+  }
+  
+  /* Show submenu on hover */
+  .main-menu ul li:hover ul.submenu {
+    display: block; /* Display submenu on hover */
+  }
+  
+  /* Ensure submenus are not cut off */
+  .main-menu ul {
+    overflow: visible; /* Prevent submenus from being clipped */
+  }
+  /* Estilos para el ícono de login */
+  .login-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e63946;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    order: 2; /* Ícono después del buscador */
+  }
+  
+  .login-icon:hover {
+    background-color: #d62828; /* Cambia el color al pasar el cursor */
+  }
+  /* Estilo del modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .modal-body h3 {
+    margin-top: 0;
+  }
+  
+  .portals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espaciado entre íconos */
+    text-align: center;
+  }
+  
+  .portals a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .portals img {
+    width: 80px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+    
+    /* Banner */
+    .banner {
+      position: relative;
+      width: 100%;
+    }
+    
+    .banner-img {
+      width: 100%;
+      height: auto;
+    }
+    
+    
+    .breadcrumb {
+      font-size: 14px;
+    }
+    
+    .breadcrumb a {
+      color: #e63946;
+      text-decoration: none;
+    }
+    
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    .contact-info {
+        background-color: #ffffff;
+        padding: 40px 20px;
+      }
+      
+      .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px; /* Aumenta o reduce este valor para ajustar el espaciado */
+      }
+      
+      .contact-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .contact-logo img {
+        width: 80px; /* Reduce el tamaño del logo */
+        margin-bottom: 5px; /* Espaciado reducido entre logo y texto */
+      }
+      
+      .gov-footer-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Asegura que el texto se alinee al inicio */
+      }
+      
+      .gov-footer-text p {
+        margin: 0;
+        line-height: 1.2;
+        color: #002f5e;
+        font-family: 'Arial', sans-serif;
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+      }
+      
+      .gov-footer-text p:nth-child(3) {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        color: #e63946;
+        font-size: 16px; /* Reduce el tamaño del texto */
+        margin-top: 3px; /* Espaciado más pequeño */
+        position: relative;
+      }
+      
+      .gov-footer-text p:nth-child(3)::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #e63946;
+        position: absolute;
+        top: -2px; /* Ajuste de la línea */
+        left: 0;
+      }
+      
+      
+      .contact-column {
+        flex: 1;
+        min-width: 200px;
+      }
+      
+      .contact-column h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #122a58;
+        font-weight: bold;
+      }
+      
+      .contact-column p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #122a58;
+      }
+      
+      .contact-column a {
+        text-decoration: none;
+        color: #122a58;
+      }
+      
+      .contact-column a:hover {
+        color: #e63946;
+        text-decoration: underline;
+      }
+      /* Estructura básica */
+    
+      .social-media {
+        padding: 30px 20px;
+        text-align: center;
+        background-color: #002f5e;
+        color: #fff;
+      }
+      
+      .social-media h2 {
+        margin-bottom: 20px;
+        color: white;
+      }
+      
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      
+      .social-links a {
+        color: white;
+        font-size: 24px; /* Tamaño del ícono */
+        text-decoration: none;
+        transition: transform 0.3s ease, color 0.3s ease;
+      }
+      
+      .social-links a:hover {
+        color: #e63946; /* Color al pasar el mouse */
+       
+      }
+      html, body {
+        height: 100%; /* Asegura que la altura ocupe todo el viewport */
+        margin: 0; /* Elimina cualquier margen */
+        display: flex;
+        flex-direction: column; /* Organiza el contenido en columna */
+      }
+      
+      main {
+        flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+        margin: 0; /* Elimina márgenes extra */
+      }
+      
+      
+        footer {
+          background-color: #002f5e; /* Azul oscuro */
+          color: white; /* Letra blanca */
+          text-align: center;
+          padding: 10px 0; /* Espaciado */
+          font-size: 14px;
+          width: 100%;
+          margin: 0;
+          position: fixed; /* Lo fija al fondo */
+          bottom: 0; /* Asegura que esté en la parte inferior */
+          left: 0;
+          z-index: 10;
+        }
+        /* Contenedor Principal */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f8f9fa; /* Fondo claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contenedor del Director */
+  .director-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Imagen del Director */
+  .director-img-container {
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .director-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Información del Director */
+  .director-info {
+    flex: 2;
+    font-family: 'Poppins', sans-serif;
+    color: #122a58; /* Azul oscuro */
+  }
+  
+  .director-info h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000; /* Negro */
+    margin-bottom: 10px;
+  }
+  
+  .director-info h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #555555; /* Gris oscuro */
+    margin-bottom: 5px;
+  }
+  
+  .director-info h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+    margin-bottom: 15px;
+  }
+  
+  .director-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #333333;
+  }
+  
