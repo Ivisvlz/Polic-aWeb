@@ -1,0 +1,93 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8fa;
+}
+
+.stakeholder-map {
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.header {
+    background-color: #ff6161;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.central-node {
+    background-color: #ffa500;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.branches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.branch {
+    width: 250px;
+}
+
+.stakeholder-group {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stakeholder-group h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.stakeholder-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.stakeholder-group ul li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}

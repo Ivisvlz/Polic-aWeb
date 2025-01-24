@@ -1,0 +1,93 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.journey-map {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.profile-info h3 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.scenario, .expectations {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.scenario h2, .expectations h2 {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.map {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+    position: relative;
+    text-align: left;
+}
+
+.section:last-child {
+    margin-right: 0;
+}
+
+/* Section Colors */
+.decide {
+    background-color: #d4e9f9;
+}
+
+.travel {
+    background-color: #c2e7d9;
+}
+
+.experience {
+    background-color: #ead4ef;
+}
+
+.return {
+    background-color: #ffe5b5;
+}
+
+h3 {
+    color: #34495e;
+    text-align: center;
+}
+
+ol, ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
